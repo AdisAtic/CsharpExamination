@@ -57,8 +57,30 @@ AddressBookAssignment/
 
 * .NET 9 SDK (eller senare)
 * Visual Studio Code eller Visual Studio 2022+
+* Git (för att klona repot)
+* C#-utökningen för Visual Studio Code (Om du kör VS Code)
 
-## Bygga och köra
+## Installera beroenden
+
+Innan du bygger projektet behöver du installera de NuGet-paket som används för DI, hosting och MVVM i respektive projekt:
+
+```bash
+# I Core-projektet behövs inga externa paket utöver .NET SDK
+
+# I Console-appen (AddressBook.Console):
+cd src/AddressBook.Console
+dotnet add package Microsoft.Extensions.DependencyInjection
+
+# I GUI-appen (AddressBook.Gui):
+cd ../AddressBook.Gui
+dotnet add package Microsoft.Extensions.Hosting
+# (Eventuellt även DI om du inte redan har det via Hosting-paketet)
+# dotnet add package Microsoft.Extensions.DependencyInjection
+
+# I testprojekten: XUnit och dotnet test SDK är vanligtvis redan refererade när projektet skapades.
+```
+
+## Bygga och köraa
 
 ### Bygga lösningen
 
