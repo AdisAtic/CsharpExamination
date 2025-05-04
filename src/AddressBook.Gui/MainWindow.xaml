@@ -1,0 +1,48 @@
+﻿<Window x:Class="AddressBook.Gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adressbok" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Knapp‐rad -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <Button Content="Lägg till" Command="{Binding AddCommand}" Width="80" Margin="0,0,5,0"/>
+            <Button Content="Ta bort"  Command="{Binding RemoveCommand}" Width="80" Margin="0,0,5,0"/>
+            <Button Content="Uppdatera" Command="{Binding RefreshCommand}" Width="80"/>
+            <Button Content="Redigera"   Command="{Binding EditCommand}"    Width="80"/>
+        </StackPanel>
+
+        <!-- Kontaktlista -->
+        <ListView Grid.Row="1"
+                  ItemsSource="{Binding Contacts}"
+                  SelectedItem="{Binding SelectedContact, Mode=TwoWay}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Förnamn"  DisplayMemberBinding="{Binding FirstName}" Width="120"/>
+                    <GridViewColumn Header="Efternamn" DisplayMemberBinding="{Binding LastName}"  Width="120"/>
+                    <GridViewColumn Header="E-post"    DisplayMemberBinding="{Binding Email}"     Width="200"/>
+                    <GridViewColumn Header="Telefon"    DisplayMemberBinding="{Binding PhoneNumber}" Width="120"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Detaljvy -->
+        <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="1" Padding="10" Margin="0,10,0,0">
+            <StackPanel>
+                <TextBlock Text="Detaljer för vald kontakt:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Text="{Binding SelectedContact.FirstName}" />
+                <TextBlock Text="{Binding SelectedContact.LastName}"  Margin="0,0,0,5"/>
+                <TextBlock Text="{Binding SelectedContact.Email}"     Margin="0,0,0,5"/>
+                <TextBlock Text="{Binding SelectedContact.PhoneNumber}" Margin="0,0,0,5"/>
+                <TextBlock Text="{Binding SelectedContact.Address}"    TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

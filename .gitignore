@@ -1,0 +1,60 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.trx
+*.Coverage.xml
+
+# Publish folder
+publish/
+
+# IIS Express
+/.vs/
+config/Logs/
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Optional: ignore user secrets (uncomment om du använder User Secrets)
+/secrets.json
+
+# Kör inte bort din contacts.json – den vill vi ha versionshanterad!
+# Om du ändå vill exkludera lokala datakopior, använd:
+# contacts.json

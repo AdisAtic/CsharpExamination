@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{898CEAAF-81A6-4BB1-8CA6-2A4E3CA739C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Core", "src\AddressBook.Core\AddressBook.Core.csproj", "{D5E893C6-97AD-4557-906C-0E84463D4857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Console", "src\AddressBook.Console\AddressBook.Console.csproj", "{7246A922-1934-4D15-ADD9-76AFD79DEE55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59B2615E-D8CA-4A46-A1DA-D1E3A547E983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Console.Tests", "tests\AddressBook.Console.Tests\AddressBook.Console.Tests.csproj", "{3DF0E454-EC29-4252-9FE5-601A0F093C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Gui", "src\AddressBook.Gui\AddressBook.Gui.csproj", "{98E37089-B49D-4CF9-A75D-342C446DD491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Gui.Tests", "tests\AddressBook.Gui.Tests\AddressBook.Gui.Tests.csproj", "{73FC1486-FB83-4DC3-A854-D569D48E86A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5E893C6-97AD-4557-906C-0E84463D4857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E893C6-97AD-4557-906C-0E84463D4857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E893C6-97AD-4557-906C-0E84463D4857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E893C6-97AD-4557-906C-0E84463D4857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7246A922-1934-4D15-ADD9-76AFD79DEE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7246A922-1934-4D15-ADD9-76AFD79DEE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7246A922-1934-4D15-ADD9-76AFD79DEE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7246A922-1934-4D15-ADD9-76AFD79DEE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF0E454-EC29-4252-9FE5-601A0F093C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF0E454-EC29-4252-9FE5-601A0F093C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF0E454-EC29-4252-9FE5-601A0F093C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF0E454-EC29-4252-9FE5-601A0F093C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E37089-B49D-4CF9-A75D-342C446DD491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E37089-B49D-4CF9-A75D-342C446DD491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E37089-B49D-4CF9-A75D-342C446DD491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E37089-B49D-4CF9-A75D-342C446DD491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73FC1486-FB83-4DC3-A854-D569D48E86A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FC1486-FB83-4DC3-A854-D569D48E86A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FC1486-FB83-4DC3-A854-D569D48E86A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FC1486-FB83-4DC3-A854-D569D48E86A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5E893C6-97AD-4557-906C-0E84463D4857} = {898CEAAF-81A6-4BB1-8CA6-2A4E3CA739C8}
+		{7246A922-1934-4D15-ADD9-76AFD79DEE55} = {898CEAAF-81A6-4BB1-8CA6-2A4E3CA739C8}
+		{3DF0E454-EC29-4252-9FE5-601A0F093C73} = {59B2615E-D8CA-4A46-A1DA-D1E3A547E983}
+		{98E37089-B49D-4CF9-A75D-342C446DD491} = {898CEAAF-81A6-4BB1-8CA6-2A4E3CA739C8}
+		{73FC1486-FB83-4DC3-A854-D569D48E86A6} = {59B2615E-D8CA-4A46-A1DA-D1E3A547E983}
+	EndGlobalSection
+EndGlobal
